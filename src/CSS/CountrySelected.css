@@ -1,0 +1,289 @@
+section{
+    padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: var(--Text);
+    background-color: var(--Background);
+}
+.container{
+    width: 90%;
+    /* border: 1px solid; */
+    height: 80vh;
+    background-color: var(--Background);
+}
+.go-back-btn{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.go-back-btn button{
+    background : var(--Background) ;
+    padding: 8px 40px;
+    border: none;
+    box-shadow: 1px 1px 5px var(--Input);
+    border-radius: 2px;
+    cursor: pointer;
+    color: var(--Text);
+}
+
+
+.back-btn{
+    position: relative;
+}
+.back-btn span{
+    position: absolute;
+    left: 15%;
+}
+
+
+.country-detail{
+    width: 100%;
+    height: 70%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+}
+.country-flag{
+    width: 40%;
+    height: 100%;
+}
+    .country-flag img{
+        width: 100%;
+        height: 100%;
+    }
+
+.country-info{
+    width: 50%;
+    /* border: 1px solid lightblue; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.country-info .info{
+    height: 80%;
+    width: 100%;
+    /* border: 1px solid green; */
+}
+
+.info .c-name{
+    width: 100%;
+    height: 20%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+.c-name h1{
+    font-weight: 800;
+
+}
+.middle-info{
+    height: 60%;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+}
+.middle-left{
+    /* background-color: blue; */
+    width: 50%;
+    line-height: 30px;
+}
+.middle-right{
+    /* border: 1px solid yellow; */
+    width: 50%;
+    line-height: 30px;
+}
+.bottom{
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+.bottom button{
+    border: 1px solid var(--Input);
+    background-color: var(--Background);
+    padding: 5px 30px;
+    margin-left: 10px;
+    border-radius: 2px;
+    color: var(--Text);
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 300px) and (max-width: 767px) {
+section{
+    height: 1000px;
+    background-color: var(--Background);
+}
+
+
+.country-detail{
+    width: 100%;
+    height: 750px;
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.country-flag{
+    width: 90%;
+    height: 30%;
+}
+    .country-flag img{
+        width: 100%;
+        height: 100%;
+    }
+
+.country-info{
+    width: 90%;
+    /* border: 1px solid lightblue; */
+    height: 70%;
+    /* border: 1px solid red; */
+    /* color: green; */
+    display: flex;
+    
+    align-items: center;
+    justify-content: unset;
+}
+.country-info .info{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid green; */
+}
+
+.info .c-name{
+    width: 100%;
+    height: 20%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+.c-name h1{
+    font-weight: 800;
+
+}
+.middle-info{
+    height: 60%;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.middle-left{
+    /* background-color: blue; */
+    width: 100%;
+    line-height: 30px;
+}
+.middle-right{
+    /* border: 1px solid yellow; */
+    width: 100%;
+    line-height: 30px;
+}
+.bottom{
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+.bottom button{
+    border: 1px solid var(--Input);
+    background-color: var(--Background);
+    padding: 5px 30px;
+    margin-left: 10px;
+    border-radius: 2px;
+}
+
+   
+   }
+   
+   /* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+
+    section{
+        height: 1000px;
+        background-color: var(--Background);
+    }
+    
+    
+    .country-detail{
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid yellow; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .country-flag{
+        width: 90%;
+        height: 100%;
+    }
+        .country-flag img{
+            width: 100%;
+            height: 100%;
+        }
+    
+    .country-info{
+        width: 90%;
+        /* border: 1px solid lightblue; */
+        height: 100%;
+        display: flex;
+        
+        align-items: center;
+        justify-content: unset;
+    }
+    .country-info .info{
+        height: 70%;
+        width: 100%;
+        /* border: 1px solid green; */
+    }
+    
+    .info .c-name{
+        width: 100%;
+        height: 20%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+    }
+    .c-name h1{
+        font-weight: 800;
+    
+    }
+    .middle-info{
+        height: auto;
+        width: 100%;
+        /* background-color: green; */
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .middle-left{
+        /* background-color: blue; */
+        width: 100%;
+        line-height: 30px;
+    }
+    .middle-right{
+        /* border: 1px solid yellow; */
+        width: 100%;
+        line-height: 30px;
+    }
+    .bottom{
+        height: 30%;
+        display: flex;
+        align-items: center;
+    }
+    .bottom button{
+        border: 1px solid var(--Input);
+        background-color: var(--Background);
+        padding: 5px 30px;
+        margin-left: 10px;
+        border-radius: 2px;
+        color: var(--Text);
+    }
+    
+
+   }

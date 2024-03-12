@@ -1,0 +1,295 @@
+main{
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--Text);
+    height: 100%;
+}
+.card-container{
+    width: 90%;
+    font-family: var(--font);
+}
+.controls{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+    width: 30%;
+    position: relative;
+}
+
+.left input{
+    background-color: var(--Background);
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding-left: 45px;
+    box-shadow: 1px 1px 10px var(--Input);
+    /* position: relative; */
+    cursor: pointer;
+    color: var(--Text);
+}
+
+input ::placeholder{
+    color: var(--Text);
+}
+.left span{
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    color: var(--Text);
+    z-index: 0;
+}
+
+.right{
+    width: 15%;
+}
+.right select{
+    cursor: pointer;
+    height: 40px;
+    background-color: var(--Background);
+    color: var(--Text);
+    width: 100%;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 5px var(--Input);
+}
+
+.card-grid{
+   /* background-color: var(--LightModeBackground); */
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   column-gap: 3.9%;
+   row-gap: 30px;
+   transition:  0.2s;
+   /* background-color: lightskyblue; */
+}
+
+.card{
+    /* border: 1px solid black; */
+    background-color: var(--Background);
+    /* color: var(--LightModeText); */
+    height: 400px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px var(--Input);
+    cursor: pointer;
+}
+
+.image{
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid red; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+.image img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card .content{
+    /* border: 1px solid green; */
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    font-family: var(--font);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.content .info{
+    padding-top: 15px;
+    line-height: 30px;
+}
+.content .name h3{
+    font-weight: 900;
+}
+.info p{
+    font-weight: 700;
+}
+.info span{
+    font-weight: 400;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--Text);
+    transition: all .5s;
+}
+
+
+/* for Dark MOde */
+
+/* .darkgrid{
+    color: red;
+    background-color: green;
+} */
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 300px) and (max-width: 767px) {
+    .controls{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+        justify-content: space-around;
+    }
+    .left{
+        width: 100%;
+        position: relative;
+
+    }
+    
+    .left input{
+        background-color: var(--Background);
+        height: 40px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        padding-left: 45px;
+        box-shadow: 3px 3px 10px var(--Input);
+        /* position: relative; */
+        cursor: pointer;
+        color: var(--Text);
+    }
+
+    input ::placeholder{
+        color: var(--Text);
+    }
+    .left span{
+        position: absolute;
+        left: 5%;
+        top: 30%;
+        color: var(--Text);
+        z-index: 0;
+    }
+    
+    .right{
+        width: 50%;
+    }
+    .right select{
+        cursor: pointer;
+        height: 40px;
+        background-color: var(--Background);
+        color: var(--Text);
+        width: 100%;
+        padding-left: 10px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 3px 3px 5px var(--Input);
+    }
+    .card-grid{
+        /* background-color: var(--LightModeBackground); */
+        display: grid;
+        grid-template-columns: repeat(1, 0.9fr);
+        column-gap: 3.9%;
+        row-gap: 30px;
+        transition:  0.2s;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* background-color: lightskyblue; */
+     }
+     .card{
+    /* border: 1px solid black; */
+    background-color: var(--Background);
+    /* color: var(--LightModeText); */
+    height: 400px;
+    width: unset;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px var(--Input);
+    cursor: pointer;
+}
+   
+   }
+   
+   /* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    .controls{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+        justify-content: space-around;
+    }
+    .left{
+        width: 100%;
+        position: relative;
+
+    }
+    
+    .left input{
+        background-color: var(--Background);
+        height: 50px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        
+        padding-left: 45px;
+        box-shadow: 3px 3px 10px var(--Input);
+        /* position: relative; */
+        cursor: pointer;
+        color: var(--Text);
+    }
+
+    input ::placeholder{
+        color: var(--Text);
+    }
+    .left span{
+        position: absolute;
+        left: 3%;
+        top: 32%;
+        color: var(--Text);
+        z-index: 0;
+    }
+    
+    .right{
+        width: 50%;
+    }
+    .right select{
+        cursor: pointer;
+        height: 50px;
+        background-color: var(--Background);
+        color: var(--Text);
+        width: 100%;
+        padding-left: 10px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 3px 3px 5px var(--Input);
+    }
+    .card-grid{
+        /* background-color: var(--LightModeBackground); */
+        display: grid;
+        grid-template-columns: repeat(2, 0.9fr);
+        column-gap: 3.9%;
+        row-gap: 30px;
+        transition:  0.2s;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* background-color: lightskyblue; */
+     }
+     .card{
+    /* border: 1px solid black; */
+    background-color: var(--Background);
+    /* color: var(--LightModeText); */
+    height: 400px;
+    width: unset;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px var(--Input);
+    cursor: pointer;
+}
+   
+   }
