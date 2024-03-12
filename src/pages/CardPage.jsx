@@ -7,7 +7,7 @@ import CountryCard from './CountryCard';
 
 
 
-const CardPage = ({theme, setTheme}) => {
+const CardPage = () => {
     const [search, setSearch] = useState('')
     const [selected, setSelected] = useState('')
     const [mapData, setmapData] = useState(data)
@@ -50,21 +50,6 @@ const CardPage = ({theme, setTheme}) => {
             // console.log(e.target.value)
             setSelected(e.target.value)
            
-            // }else if( selected === 'Europe'){
-            //     setmapData(europe)
-            // }else if( selected === 'Oceania'){
-            //     setmapData(oceania)
-            // }else if( selected === 'Americas'){
-            //     setmapData(americas)
-            // }else if( selected === 'Polar'){
-            //     setmapData(polar)
-            // }else if( selected === 'Antarctic'){
-            //     setmapData(antarctic)
-            // }else if( selected === 'Antarctic Ocean'){
-            //     setmapData(antarcticOcean)
-            // }else if(selected === 0){
-            //     setmapData(data)
-            // }
     }
 
     useEffect(()=>{

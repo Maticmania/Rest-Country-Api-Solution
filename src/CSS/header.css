@@ -6,7 +6,6 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
-   /* gap: 60%; */
    box-shadow: 1px 1px 5px var(--Input);
    color: var(--Text);
    z-index: 1;
@@ -43,12 +42,6 @@
     cursor: pointer
 }
 
-/* .darkheader{
-    background-color: var(--DarkModeElements);
-    color: var(--White);
-    box-shadow: 2px 2px 5px var(--DarkModeBackground);
-} */
-
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 300px) and (max-width: 767px) {
@@ -60,7 +53,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        /* gap: 60%; */
         box-shadow: 1px 1px 5px var(--Input);
         color: var(--Text);
         z-index: 1;
@@ -110,7 +102,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        /* gap: 60%; */
         box-shadow: 1px 1px 5px var(--Input);
         color: var(--Text);
         z-index: 1;

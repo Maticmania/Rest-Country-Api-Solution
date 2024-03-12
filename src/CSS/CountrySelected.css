@@ -9,7 +9,6 @@ section{
 }
 .container{
     width: 90%;
-    /* border: 1px solid; */
     height: 80vh;
     background-color: var(--Background);
 }
@@ -18,7 +17,6 @@ section{
     height: 25%;
     display: flex;
     align-items: center;
-    /* border: 1px solid red; */
 }
 
 .go-back-btn button{
@@ -44,7 +42,6 @@ section{
 .country-detail{
     width: 100%;
     height: 70%;
-    /* border: 1px solid yellow; */
     display: flex;
     justify-content: space-between;
 }
@@ -59,7 +56,6 @@ section{
 
 .country-info{
     width: 50%;
-    /* border: 1px solid lightblue; */
     height: 100%;
     display: flex;
     align-items: center;
@@ -68,13 +64,11 @@ section{
 .country-info .info{
     height: 80%;
     width: 100%;
-    /* border: 1px solid green; */
 }
 
 .info .c-name{
     width: 100%;
     height: 20%;
-    /* background-color: red; */
     display: flex;
     align-items: center;
 }
@@ -85,16 +79,13 @@ section{
 .middle-info{
     height: 60%;
     width: 100%;
-    /* background-color: green; */
     display: flex;
 }
 .middle-left{
-    /* background-color: blue; */
     width: 50%;
     line-height: 30px;
 }
 .middle-right{
-    /* border: 1px solid yellow; */
     width: 50%;
     line-height: 30px;
 }
@@ -123,7 +114,6 @@ section{
 .country-detail{
     width: 100%;
     height: 750px;
-    /* border: 1px solid yellow; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -140,10 +130,7 @@ section{
 
 .country-info{
     width: 90%;
-    /* border: 1px solid lightblue; */
     height: 70%;
-    /* border: 1px solid red; */
-    /* color: green; */
     display: flex;
     
     align-items: center;
@@ -152,13 +139,11 @@ section{
 .country-info .info{
     height: 100%;
     width: 100%;
-    /* border: 1px solid green; */
 }
 
 .info .c-name{
     width: 100%;
     height: 20%;
-    /* background-color: red; */
     display: flex;
     align-items: center;
 }
@@ -169,18 +154,15 @@ section{
 .middle-info{
     height: 60%;
     width: 100%;
-    /* background-color: green; */
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 .middle-left{
-    /* background-color: blue; */
     width: 100%;
     line-height: 30px;
 }
 .middle-right{
-    /* border: 1px solid yellow; */
     width: 100%;
     line-height: 30px;
 }
@@ -212,7 +194,6 @@ section{
     .country-detail{
         width: 100%;
         height: 100%;
-        /* border: 1px solid yellow; */
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -229,7 +210,6 @@ section{
     
     .country-info{
         width: 90%;
-        /* border: 1px solid lightblue; */
         height: 100%;
         display: flex;
         
@@ -239,13 +219,11 @@ section{
     .country-info .info{
         height: 70%;
         width: 100%;
-        /* border: 1px solid green; */
     }
     
     .info .c-name{
         width: 100%;
         height: 20%;
-        /* background-color: red; */
         display: flex;
         align-items: center;
     }
@@ -256,18 +234,15 @@ section{
     .middle-info{
         height: auto;
         width: 100%;
-        /* background-color: green; */
         display: flex;
         flex-direction: column;
         gap: 50px;
     }
     .middle-left{
-        /* background-color: blue; */
         width: 100%;
         line-height: 30px;
     }
     .middle-right{
-        /* border: 1px solid yellow; */
         width: 100%;
         line-height: 30px;
     }

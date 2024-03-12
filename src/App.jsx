@@ -18,16 +18,15 @@ function App() {
     setTheme2(newTheme)
   }
 
-   const [theme, setTheme] = useState('light')
 
   return (
-    <div className={`body ${theme}`} dark-theme={theme2}>
+    <div  dark-theme={theme2}>
 
       <BrowserRouter>
-      <Header theme={theme2} setTheme={setTheme} SwitchTheme={SwitchTheme}/>
+      <Header theme={theme2} setTheme={setTheme2} SwitchTheme={SwitchTheme}/>
       <Routes>
-        <Route theme={theme} setTheme={setTheme}  path='/' element={<CardPage/>} />
-        <Route  setTheme={setTheme} path='/:name/:area' element={<CountrySelected/>}/>
+        <Route path='/' element={<CardPage/>} />
+        <Route path='/:name/:area' element={<CountrySelected/>}/>
       </Routes>
       </BrowserRouter>
     </div>
