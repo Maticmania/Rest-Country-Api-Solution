@@ -49,7 +49,7 @@ const CountrySelected = () => {
                       <p>Languages: 
                             {languages.map((language, index)=>(
                               
-                                <span key={index}>{language.name}</span>
+                                <span key={index}> {language.name} </span>
                             ))}                  
                       </p>  
                     </div>

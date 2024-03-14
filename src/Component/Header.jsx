@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaRegMoon } from "react-icons/fa";
+import { FaRegMoon, FaMoon } from "react-icons/fa";
+
 import '../CSS/header.css'
 
 const Header = ({theme, setTheme, SwitchTheme}) => {
@@ -8,7 +9,6 @@ const Header = ({theme, setTheme, SwitchTheme}) => {
     theme == 'light' ? setTheme('dark') : setTheme('light');
   }
 
-  console.log(SwitchTheme);
 
   const head = 'header' 
 
@@ -20,8 +20,9 @@ const Header = ({theme, setTheme, SwitchTheme}) => {
         <div className="right-side">
             <div className='icon'>
                     <div className='toogle' onClick={SwitchTheme}>
-                      <FaRegMoon className='red'/>
-                      <span>Dark Mode</span>
+                   {theme === 'light' ?  <FaRegMoon /> : <FaMoon/>}
+                    
+                    {theme === 'dark' ? <span>Light Mode</span> : <span>Dark Mode</span>}
                     </div>
 
             </div>

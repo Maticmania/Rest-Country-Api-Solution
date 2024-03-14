@@ -30,4 +30,9 @@
   --font: "Nunito Sans", sans-serif;
 }
 
+body{
+  background-color: var(--Background);
+  height: 100vh;
+}
+
 
