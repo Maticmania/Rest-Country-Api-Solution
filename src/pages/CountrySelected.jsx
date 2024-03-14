@@ -55,7 +55,7 @@ const CountrySelected = () => {
                     </div>
                 </div>
                 <div className='bottom'>
-                    <p>Border Countries:
+                    <p>{borders && 'Border Countries:'}
                      {borders &&  borders.map((border, index)=>(
                          <button key={index}>{border}</button>
                       ))}
